@@ -1,29 +1,65 @@
-# arrays = listor, tuples, dictionaries och sets
-# Array är inte en datatyp i python
+# Vad är ett samlingsnamn för listor, tuples, dictionaries och sets?
+# Är det samlingsnamnet en datatyp i sig själv i Python?
+# Array, det är dock inte en datatyp i Python
 
-# Har index = listor, tuples, dictionaries
+# Vilka av de 4 datatyperna har index?
+# listor, dictionaries har nycklar, tuples
 
-# Kan ändras, är mutable = listor, dictionaries och sets
+# Vilka av de 4 datatyperna kan ändras (mutable)?
+# lista, dictionaries, sets
 
-# kolla typen
+# Hur lägger du till något till en lista? Hur tar du bort något?
+my_list = [1,2,3,4,5,6]
+# append lägger till
+my_list.append(2)
+# remove tar bort på värde
+my_list.remove(2)
+# pop tar bort på index
+my_list.pop(0)
 
-# kolla om något är av en typ   
+# Hur loopar du igenom en lista/tuple/set?
+for x in my_list:
+    print(x)
 
-# Lista - [] - mutable = kan modifieras - har index
+# Hur fungerar enumerate?
+for index, x in enumerate(my_list):
+    print(f"{index} : {x}")
 
+# Hur loopar du igenom keys i ett dictionary? Hur loopar du igenom values? Hur loopar du igenom både och?
+grades = {
+    "matematik" : "C",
+    "kemi" : "D",
+    "engelska" : "B"
+}
 
-# lägga till i en lista
+for k in grades.keys():
+    print(k)
+for v in grades.values():
+    print(v)
 
-# Ta bort med element
+for x,y in grades.items():
+    print(f"{x} : {y}")
 
-# Ta bort med index och eventuellt spara
+# Kan man blanda datatyper i en array?
+the_list = [6, "anton", True, [1,2,3]]
 
-# Indexerror = ett index som inte finns
+# Varför skulle man vilja använda dictionaries eller tuples istället för listor?
+# dictionaries snabbare att kolla om något finns, bättre struktur
+# tuples - immutable, kan inte ändras
 
+# Hur skriver du ut en lista utan [ ]?
+my_list = [1,2,3,4,5,6]
+print(*my_list)
 
-# Tuples kan användas istället för listor om vi vill ha ett konstant värde
+# Vad är IndexError?
+print(my_list[8])
 
-# Dictionaries kan anväändas med 2 värden kopplade till varandra
+# Hur kollar du om ett element finns i en lista?
+if 7 in my_list:
+    print("7 finns i listan")
+
+# Hur byter du plats på två element i en lista?
+my_list[1], my_list[4] = my_list[4], my_list[1]
 
 
 
