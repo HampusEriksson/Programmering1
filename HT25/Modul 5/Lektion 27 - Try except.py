@@ -1,5 +1,46 @@
 """Exempel på try/except i Python."""
 
+# try except
+while True:
+	try:
+		age = int(input("What is your age?"))
+		break
+
+	except ValueError:
+		print("Du skrev inte in ett tal")
+
+print(age)
+
+# isdigit
+while True:
+	age = input("What is your age?")
+
+	if age.isdigit():
+		age = int(age)
+		break
+	else:
+		print("Du skrev inte in ett tal")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Exempel 1: Fånga ValueError
 try:
@@ -42,3 +83,5 @@ try:
 	print("Du valde:", lista[index])
 except Exception as fel:
 	print("Något gick fel:", fel)
+
+
