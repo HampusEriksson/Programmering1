@@ -2,6 +2,7 @@
 
 # Importa modul som använder keyboard
 # Skapa gränserna för spelplanen
+
 # Skapa ormen
 # Röra på ormen
 # Skapa äpple
