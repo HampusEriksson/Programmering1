@@ -1,9 +1,6 @@
 # Omvandla input till int
 
-# length = int(input("How tall are you?      "))
 
-# print("Welcome!")
-# print(f"You are {length} cm tall.")
 
 # Addition
 
