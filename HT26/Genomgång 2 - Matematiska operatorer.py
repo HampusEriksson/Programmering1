@@ -22,10 +22,12 @@ print(9**0.5)
 # Floor division x // y - dela x på y, runda ner till heltal
 print(17 // 5)
 print(21 // 5)
+print(230 // 60)
 
 # Modulo x % y - hur mycket rest när x delas med y
 print(17 % 5)  # 2
 print(21 % 5)  # 1
+print(230 % 60)
 
 # Jämnt tal
 print(6 % 2)
