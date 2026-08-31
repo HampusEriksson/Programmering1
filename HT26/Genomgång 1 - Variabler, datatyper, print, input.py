@@ -1,6 +1,7 @@
 # Datatyper - str - text
 "Hampus"
-'Hampus'
+
+"Hampus"
 
 # Variabler
 # variabel_namn = värde
