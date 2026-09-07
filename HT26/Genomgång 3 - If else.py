@@ -50,3 +50,21 @@ if tal % 2 == 0:
     print("Jämnt")
 elif tal % 2 != 0:
     print("Inte jämnt")
+
+# Bugg, blir alltid rätt
+svar = input("Vad blir 1+1?")
+
+if svar == "2" or "två":
+    print("Rätt")
+else:
+    print("Fel")
+
+# Bugg, 65+ betalar 150kr
+age = int(input("Age: "))
+
+if age > 25:
+    print("Priset är 150kr")
+elif age > 65:
+    print("Priset är 100kr")
+else:
+    print("Priset är 50kr")
