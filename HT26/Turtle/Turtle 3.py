@@ -17,25 +17,31 @@ score_turtle.color("black")
 
 score = 0
 
+
 def uppdatera_score():
     global score
     score += 1
     score_turtle.clear()
     score_turtle.write(f"Score: {score}", font=("Arial", 24, "normal"))
 
+
 # Funktioner som bara ändrar variabeln 'riktning'
-def ga_upp():
+def go_up():
     padda.setheading(90)
 
-def ga_ner():
+
+def go_down():
     # seth är samma som setheading
     padda.seth(270)
 
-def ga_vanster():
-   padda.seth(180)
 
-def ga_hoger():
+def go_left():
+    padda.seth(180)
+
+
+def go_right():
     padda.seth(0)
+
 
 def stop():
     global stopped
@@ -49,10 +55,10 @@ def stop():
 
 # Koppla tangenter
 screen.listen()
-screen.onkeypress(ga_upp, "Up")
-screen.onkeypress(ga_ner, "Down")
-screen.onkeypress(ga_vanster, "Left")
-screen.onkeypress(ga_hoger, "Right")
+screen.onkeypress(go_up, "Up")
+screen.onkeypress(go_down, "Down")
+screen.onkeypress(go_left, "Left")
+screen.onkeypress(go_right, "Right")
 screen.onkeypress(stop, "space")
 
 
@@ -61,10 +67,11 @@ def flytta():
 
     if stopped == False:
         padda.forward(5)
-    
+
     # Kör denna funktion igen efter 20 millisekunder
     screen.ontimer(flytta, 20)
 
-flytta() # Starta rörelsen
+
+flytta()  # Starta rörelsen
 
 screen.mainloop()
