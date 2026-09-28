@@ -6,6 +6,7 @@ screen.setup(width=800, height=600)
 padda = turtle.Turtle()
 padda.shapesize(5)
 padda.penup()
+screen.tracer(0)
 
 apple = turtle.Turtle()
 
@@ -75,7 +76,6 @@ def flytta():
     if padda.distance(apple) < 20:
         uppdatera_score()
         apple.goto(random.randint(-200, 200), random.randint(-200, 200))
-        del apple
 
 
 flytta()  # Starta rörelsen
