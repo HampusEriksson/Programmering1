@@ -58,5 +58,6 @@ apple.color("red")
 
 if padda.distance(apple) < 15:
     apple.goto(random.randint(-200, 200), random.randint(-200, 200))
+
 # Skriv turtle.done() för att fönstret ska vara kvar öppet
 turtle.done()
