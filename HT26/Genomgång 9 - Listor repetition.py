@@ -42,3 +42,24 @@ food.pop(3)
 
 # len() - antal element i listan
 print(f"Till slut så fanns det {len(food)} maträtter kvar i listan.")
+
+
+# döp inte din lista till list
+colors = ["blue", "red", "green"]
+# kolla om input är en siffra
+index = input("Vilket index vill du se?")
+if index.isdigit():
+    index = int(index)
+else:
+    print("Skriv en siffra tack.")
+# hitta index i lista
+color = input("Vilken färg vill du se index av?")
+
+print(f"Den färgen har index {colors.index(color)}")
+
+# ändra ordningen på två element
+colors = ["blue", "red", "green"]
+colors[0], colors[1] = colors[1], colors[0]
+
+a, b = 1, 3
+print(*colors)
